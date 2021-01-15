@@ -24,7 +24,8 @@ public class CustomEndpoint {
 
 	@ReadOperation
 	public String invoke() {
-		return "Hello World!";
+		String response = "Hello World!";
+		return response;
 	}
 
 }

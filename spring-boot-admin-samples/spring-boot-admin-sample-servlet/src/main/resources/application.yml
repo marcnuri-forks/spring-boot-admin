@@ -90,9 +90,12 @@ spring:
       password: "password"
   boot:
     admin:
+      monitor:
+        default-timeout: 30000
       client:
         username: "user"       #These two are needed so that the client
         password: "password"   #can register at the protected server api
+        read-timeout: 30000
         instance:
           metadata:
             user.name: "user"         #These two are needed so that the server
